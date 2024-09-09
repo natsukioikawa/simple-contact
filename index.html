@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <meta charset="utf-8">
+    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/logo_icon.png">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+<body>
+        
+    <header>
+
+
+    </header>
+
+        <!-- ============= シンプルなお問い合わせフォーム ================================================== -->
+
+        <div class="body1">
+        <h2>シンプルなお問い合わせフォーム</h2>
+
+        <div class="box_con02">
+            <form method="post" action="contact.php">
+                <table class="formTable">
+                    <tr>
+                        <th><span class="required">＊</span>確認</th>
+                        <td>
+                            <div class="box_br">
+                                <input type="radio" name="gender" value="テキスト1" id="text1" required>
+                                <label for="text1">テキスト1</label>
+                            </div>
+                            <div class="box_br">
+                                <input type="radio" name="gender" value="テキスト2" id="text2" required>
+                                <label for="text2">テキスト2</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><span class="required">＊</span>ご用件</th>
+                        <td>
+                            <select name="ご用件" required>
+                                <option value="">選択してください&nbsp;&nbsp;&nbsp;&nbsp;&#9660;</option>
+                                <option value="ご質問・お問い合わせ">ご質問・お問い合わせ</option>
+                                <option value="リンクについて">リンクについて</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><span class="required">＊</span>お名前</th>
+                        <td><input size="20" type="text" class="wide" name="お名前" placeholder="山田　太郎" required /></td>
+                    </tr>
+                    <tr>
+                        <th><span class="required">＊</span>電話番号（半角）</th>
+                        <td><input size="30" type="text" class="wide" name="電話番号" placeholder="080-xxxx-xxxx" required /></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp;&nbsp;&nbsp;&nbsp;Mail（半角）</th>
+                        <td><input size="30" type="email" placeholder="xxxx-xxxx@xxx.jp" class="wide" name="Email" /></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp;&nbsp;&nbsp;&nbsp;お問い合わせ内容<br/></th>
+                        <td><textarea name="お問い合わせ内容"  placeholder="こちらにお問い合わせ内容を入力してください。" cols="50" rows="5" required></textarea></td>
+                    </tr>
+                </table>
+                <div class="con_pri">
+                    <h4>プライバシーについて</h4>
+                    <p class="txt">プライバシーポリシーの詳細についてはこちらをご確認ください。</p>
+                    <!-- スクロール可能なコンテンツを持つボックス -->
+                    <div class="scrollable-box">
+                        <p>これはスクロール可能なボックスです。</p>
+                        <p>ここに多くのテキストが追加されると...</p>
+                        <p>スクロールバーが表示されます。</p>
+                        <p>このボックスの内容はスクロールできます。</p>
+                        <p>追加のテキストが続きます...</p>
+                        <p>さらにテキストを追加します...</p>
+                        <p>このボックス内のすべてのテキストを読むためには、スクロールする必要があります。</p>
+                        <p>最後までスクロールしてください。</p>
+                    </div>
+                </div>
+                <div class="box_check">
+                    <input type="checkbox" name="acceptance-714" value="1" aria-invalid="false" class="agree" required>
+                    <label for="acceptance-714">プライバシーポリシーに同意する</label>
+                </div>
+                <p class="btn">
+                    <input type="submit" value="　 確認 　" />
+                </p>
+            </form>
+        </div>
+        </div>
+
+
+    <footer>
+
+
+    </footer>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+/* 全体のスタイル */
+
+h2 {
+    text-align: center;
+}
+
+
+/* ================== シンプルなお問い合わせフォーム ============================= */
+
+.body1 {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* フォームコンテナ */
+.box_con02 {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 70%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* テーブルスタイル */
+.formTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.formTable th, .formTable td {
+    padding: 10px;
+    text-align: left;
+}
+
+.formTable th {
+    width: 30%;
+    background-color: #f5f5f5;
+    /* color: #fff; */
+    border: 5px solid #FFF;
+    border-radius: 15px;
+}
+
+.formTable td {
+    width: 70%;
+}
+
+.required {
+    color: red;
+}
+
+/* テキストエリアと入力フィールド */
+textarea , input[type="text"], input[type="email"], select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* ラジオボタンとチェックボックスのスタイル */
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* プライバシーセクション */
+.con_pri {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* スクロール可能なボックス */
+.scrollable-box {
+    max-height: 200px;  /* ボックスの最大高さを設定 */
+    overflow-y: auto;   /* 縦方向のスクロールバーを有効にする */
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+
+.con_pri h4 {
+    margin-bottom: 10px;
+}
+
+/* 送信ボタン */
+.btn {
+    text-align: center;
+}
+
+.btn input[type="submit"] {
+    background-color: #915524;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn input[type="submit"]:hover {
+    /* background-color: #45a049; */
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+
+@media (max-width: 720px) {
+    .box_con02 {
+        max-width: 95%;
+    }
+    
+    /* .formTable th {
+        width: 100%;
+    }
+    
+    .formTable td {
+        width: 100%;
+    } */
+
+    .formTable th , .formTable td {
+        width: 100%;
+        display:block;
+    }
+
+}
